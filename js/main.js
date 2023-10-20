@@ -5,7 +5,7 @@ const app = new PIXI.Application({
   antialias: true, // default: false
   transparent: false, // default: false
   resolution: 1,
-  backgroundColor: '#888',
+  backgroundColor: '#545454',
   resizeTo: window,
 });
 
@@ -111,25 +111,33 @@ for (let i = 0; i < numTextures; i++) {
 }
 
 // Создаем спрайты для машинок и гаражей
-const carBlueImg = PIXI.Texture.from('../img/blue.png');
+const carBlueImg = PIXI.Texture.from(
+  'https://raw.githubusercontent.com/AlexandraKuraeva/game-pixi/main/img/blue.png',
+);
 const carBlue = new PIXI.Sprite(carBlueImg);
 carBlue.anchor.set(0.5);
 carBlue.position.set(720, 320);
 gameScene.addChild(carBlue);
 
-const carGreenImg = PIXI.Texture.from('../img/green.png');
+const carGreenImg = PIXI.Texture.from(
+  'https://raw.githubusercontent.com/AlexandraKuraeva/game-pixi/main/img/green.png',
+);
 const carGreen = new PIXI.Sprite(carGreenImg);
 carGreen.anchor.set(0.5);
 carGreen.position.set(120, 320);
 gameScene.addChild(carGreen);
 
-const carRedImg = PIXI.Texture.from('../img/red.png');
+const carRedImg = PIXI.Texture.from(
+  'https://raw.githubusercontent.com/AlexandraKuraeva/game-pixi/main/img/red.png',
+);
 const carRed = new PIXI.Sprite(carRedImg);
 carRed.anchor.set(0.5);
 carRed.position.set(210, 700);
 gameScene.addChild(carRed);
 
-const carYellowImg = PIXI.Texture.from('../img/yellow.png');
+const carYellowImg = PIXI.Texture.from(
+  'https://raw.githubusercontent.com/AlexandraKuraeva/game-pixi/main/img/yellow.png',
+);
 const carYellow = new PIXI.Sprite(carYellowImg);
 carYellow.anchor.set(0.5);
 carYellow.position.set(620, 700);
