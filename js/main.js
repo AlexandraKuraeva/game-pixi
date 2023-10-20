@@ -26,13 +26,17 @@ appContainer.addChild(gameScene);
 gameOverScene.visible = false;
 
 // Создаем кнопку на сцене после проигрыша
-const buttonImg = PIXI.Texture.from('../img/button.png');
+const buttonImg = PIXI.Texture.from(
+  'https://raw.githubusercontent.com/AlexandraKuraeva/game-pixi/main/img/button.png',
+);
 const button = new PIXI.Sprite(buttonImg);
 button.anchor.set(0.5);
 button.position.set(400, 550);
 button.cursor = 'pointer';
 
-const trafficImg = PIXI.Texture.from('../img/traffic.png');
+const trafficImg = PIXI.Texture.from(
+  'https://raw.githubusercontent.com/AlexandraKuraeva/game-pixi/main/img/traffic.png',
+);
 const traffic = new PIXI.Sprite(trafficImg);
 traffic.anchor.set(0.5);
 traffic.position.set(400, 300);
@@ -99,7 +103,9 @@ const parkingContainer = new PIXI.Container();
 gameScene.addChild(parkingContainer);
 
 //Отрисовка парковки
-const parkingLine = PIXI.Texture.from('../img/line.png');
+const parkingLine = PIXI.Texture.from(
+  'https://raw.githubusercontent.com/AlexandraKuraeva/game-pixi/main/img/line.png',
+);
 let parking;
 const distance = 200; // Расстояние между текстурами
 const numTextures = 5; // Количество текстур
@@ -146,14 +152,18 @@ gameScene.addChild(carYellow);
 carRed.cursor = 'pointer';
 carYellow.cursor = 'pointer';
 
-const garageRedImg = PIXI.Texture.from('../img/p2.png');
+const garageRedImg = PIXI.Texture.from(
+  'https://raw.githubusercontent.com/AlexandraKuraeva/game-pixi/main/img/P2.png',
+);
 const garageRed = new PIXI.Sprite(garageRedImg);
 garageRed.anchor.set(0);
 garageRed.position.set(500, 300);
 
 gameScene.addChild(garageRed);
 
-const garageYellowImg = PIXI.Texture.from('../img/p.png');
+const garageYellowImg = PIXI.Texture.from(
+  'https://raw.githubusercontent.com/AlexandraKuraeva/game-pixi/main/img/P.png',
+);
 const garageYellow = new PIXI.Sprite(garageYellowImg);
 garageYellow.anchor.set(0);
 garageYellow.position.set(300, 300);
